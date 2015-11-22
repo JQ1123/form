@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<title>form表单</title>
+	<link rel='stylesheet' href='css/JQform.css' type='text/css' />
+	<script type='text/javascript' src='js/jQuery1.7.2.js'></script>
+	<script type='text/javascript' src='js/JQform.js' /></script>
+</head>
+<body>
+	<div id='header'>
+		<a href='#' id='JQregButton'>注册</a>
+		<a href='#' id='JQLoginButton'>登录</a>
+	</div>
+	<div id='JQreg'>
+		<h2><img src='images/close.png' alt='close' />会员注册</h2>
+		<form action="">
+			<dl>
+				<dd>
+					<label for='uaerName'>用户名：</label>
+					<input type="text" name='userName'/>
+					<span class="info infoUser">请输入用户名，2~16 位，由字母、数字和下划线组成！</span>
+					<span class="error errorUser">输入不合法，请重新输入！</span>
+					<span class="succ succUser">可用</span>
+				</dd>
+				<dd>
+					<label for='password'>密码：</label>
+					<input type="password" name='password'/>
+					<span class="info infoPwd">
+						<p>安全级别：
+							<strong class="s s1">■</strong>
+							<strong class="s s2">■</strong>
+							<strong class="s s3">■</strong>
+							<strong class="s s4"></strong>
+						</p>
+						<p><strong class="q1">○</strong> 6-20 个字符</p>
+						<p><strong class="q2">○</strong>只能包含大小写字母、数字和非空格字符</p>
+						<p><strong class="q3">○</strong>大、小写字母、数字、非空字符，2 种以上</p>
+					</span>
+					<span class="error errorPwd">输入不合法，请重新输入！</span>
+					<span class="succ succPwd">可用</span>
+				</dd>
+				<dd>
+					<label for='repwd'>确认密码：</label>
+					<input type="password" name='repwd'/>
+					<span class='info infoRepwd'>请再次输入密码！</span>
+					<span class="error errorRepwd">两次密码输入不一致..</span>
+					<span class="succ succRepwd">可用</span>
+				</dd>
+				<dd>
+					<label for='question'>问题:</label>
+					<select name="question" id="formQuestion">
+						<option value="0">- - - - 请选择 - - - -</option>
+						<option value="1">- - 您最喜欢吃的菜</option>
+						<option value="2">- - 您的狗狗的名字</option>
+						<option value="3">- - 您的出生地</option>
+						<option value="4">- - 您最喜欢的明星</option>
+					</select>
+				</dd>
+				<dd>
+					<label for='answer'>回答：</label>
+					<input type="text" name='answer'/>
+					<span class='info infoAnswer'>请输入您的回答！</span>
+					<span class="error errorAnswer">回答格式错误。。</span>
+					<span class="succ succAnswer">可用</span>
+				</dd>
+				<dd>
+					<label for='email'>电子邮件：</label>
+					<input type="text" name='email'/>
+					<span class='info infoEmail'>请输入您的电子邮件！</span>
+					<span class="error errorEmail">电子邮件格式错误。。</span>
+					<span class="succ succEmail">可用</span>
+					<ul class="allEmail">
+						<li><span></span>@qq.com</li>
+						<li><span></span>@163.com</li>
+						<li><span></span>@sohu.com</li>
+						<li><span></span>@sina.com</li>
+					</ul>
+				</dd>
+				<dd>
+					<label for='birthday'>生日：</label>
+					<select name="year">
+						<option value="JQ">- 年 -</option>
+					</select> -
+					<select name="month">
+						<option value="JQ">- 月 -</option>
+					</select> -
+					<select name="day">
+						<option value="JQ">- 日 -</option>
+					</select>
+				</dd>
+				<dd>
+					<label for='text'>备注：</label>
+					<textarea name="text" id="JQformText"></textarea>
+				</dd>
+				<dd class='textInfo'>还能输入<strong>140</strong>字</dd>
+				<dd class='textInfo'>输入超过<strong></strong>字，<span>清尾</span></dd>
+				<dd><input type="button" value='' /></dd>
+			</dl>
+		</form>
+	</div>
+
+</body>
+</html>
